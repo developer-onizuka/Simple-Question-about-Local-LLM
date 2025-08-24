@@ -56,7 +56,7 @@ LLM推論エンジンの比較を以下に示す。Llama.cppとOllamaは同じ�
 | **PyTorch形式** | .bin または .pt | モデルの重みをPyTorchのテンソルとして保存。一般的な形式。 |
 | **Safetensors形式** | .safetensors | PyTorchモデルをより安全かつ高速にロードするために設計された形式。最近のモデルで多く採用されている。 |
 
-- vLLMは、これらの形式のモデルをHugging Face Hubから直接ダウンロードして利用するのを前提としています。vllm.LLMクラスにモデル名（例: "meta-llama/Llama-3-8B-Instruct"）を指定するだけで、自動的にダウンロードしてロードしてくれる。
+- vLLMは、これらの形式のモデルをHugging Face Hubから直接ダウンロードして利用することを前提としている。vllm.LLMクラスにモデル名（例: "meta-llama/Llama-3-8B-Instruct"）を指定するだけで、自動的にダウンロードしてロードしてくれる。
 
 # 8. vLLMはOpenAI互換か？
 - vLLMはOpenAI APIと互換性のあるサーバー機能を提供している。vLLMをサーバーモードで起動すると、そのエンドポイントはOpenAIのChat Completions APIやCompletions APIと同じインターフェースを持つようになり、Open WebUIなどのエコシステムを用いることができる。
