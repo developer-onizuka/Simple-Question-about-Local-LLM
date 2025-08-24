@@ -36,7 +36,7 @@ LLM推論エンジンの比較を以下に示す。Llama.cppとOllamaは同じ�
 | **主要なモデル形式** | GGUF | GGUF | PyTorch, Safetensors (Hugging Face互換)。 |
 | **主な実行環境** | CPUを主とし、GPUもサポート。 | CPU、GPU (NVIDIA, AMDなど)。 | GPU (NVIDIAを主とし、ROCmでAMDもサポート)。 |
 | **最適化アプローチ** | **事前コンパイル**によるシンプルさと移植性。 | Llama.cppをバックエンドとして利用し、使いやすさを提供。 | **JITコンパイル**と独自のアルゴリズム（PagedAttention）による高スループット。 |
-| **OpenAI互換** | 限定的 | 高い互換性（`ollama serve`） | 高い互換性（`api_server`） |
+| **OpenAI互換** | 限定的 | 高い互換性（`ollama serve`） | 高い互換性 |
 
 
 # 5. vLLMでもGGUFを使うのか？
